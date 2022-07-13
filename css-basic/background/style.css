@@ -1,0 +1,136 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  width: 840px;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.card span {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7d858f;
+}
+
+.card-image {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-right: 24px;
+  border-radius: 6px;
+  background-image: url("./assets/img-house.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.card-image .like-button {
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  background-image: url("./assets/icon-favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.plus-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  margin-right: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42857143;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #92174d;
+}
+
+.property-rate::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url("./assets/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.property-rate strong {
+  font-weight: 400;
+  color: #151b26;
+}
+
+.card-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #151b26;
+}
+
+.property-detail {
+  font-size: 14px;
+  line-height: 1.14285714;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  /* width와 height를 0으로 처리하면 screan-reader가 인식하지 않기 때문에 무조건 1px 이상은 있어야 한다. */
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.property-detail dd > span:not(:last-of-type)::after {
+  content: "·";
+  margin: 0 8px;
+  /* 가상 요소는 display의 default 설정이 inline 이다. */
+  /* inline 은 margin-top, bottom은 줄 수 없지만 left, right는 줄 수 있다. */
+}
+
+.property-detail div:first-child {
+  margin-bottom: 8px;
+}
