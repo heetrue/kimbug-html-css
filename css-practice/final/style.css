@@ -149,6 +149,10 @@ p {
 }
 
 /* Program */
+.program .row:first-child {
+  margin-bottom: 32px;
+}
+
 .program .section-category {
   color: #009b4d;
 }
@@ -241,6 +245,10 @@ p {
   /* Program */
   .program {
     text-align: center;
+  }
+
+  .program .row:first-child {
+    margin-bottom: 72px;
   }
 
   .program-card img {
