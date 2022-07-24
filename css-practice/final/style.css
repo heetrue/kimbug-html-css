@@ -153,6 +153,33 @@ p {
   color: #009b4d;
 }
 
+.program .col-md-4:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.program-card {
+  display: block;
+  padding: 24px 0 32px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+.program-card img {
+  display: block;
+  width: auto;
+  height: 195px;
+  margin: 0 auto 16px;
+}
+
+.program-card strong {
+  font-size: 18px;
+  line-height: 1.33333333;
+  letter-spacing: -0.02em;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -214,6 +241,15 @@ p {
   /* Program */
   .program {
     text-align: center;
+  }
+
+  .program-card img {
+    margin-bottom: 24px;
+  }
+
+  .program-card strong {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
