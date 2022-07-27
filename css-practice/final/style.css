@@ -57,6 +57,7 @@ p {
   width: 140px;
   height: 48px;
   padding: 12px 0;
+  border: none;
   border-radius: 2px;
   font-size: 15px;
   font-weight: 700;
@@ -222,6 +223,67 @@ p {
   line-height: 1.66666667;
 }
 
+/* Subscription */
+.subscription {
+  padding: 40px 0;
+  background-color: #f2f8fa;
+  text-align: center;
+}
+
+.subscription-image {
+  padding: 25px 0;
+  margin-bottom: 16px;
+}
+
+.subscription-image img {
+  display: block;
+  width: auto;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.subscription-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #2b292d;
+}
+
+.subscription-desc {
+  margin-bottom: 24px;
+}
+
+.subscription .input-group input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+}
+
+.subscription .input-group {
+  margin-bottom: 8px;
+}
+
+.subscription .input-group .fill-button {
+  width: 100%;
+}
+
+.subscription-form .form-notice {
+  font-size: 13px;
+  line-height: 1.53846154;
+  letter-spacing: 0;
+  color: #7b7b7e;
+}
+
+.subscription-form .form-notice a {
+  text-decoration: underline;
+  color: #3040c4;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -325,6 +387,46 @@ p {
   .curriculum-detail-desc {
     font-size: 18px;
     line-height: 1.44444444;
+  }
+
+  /* Subscription */
+  .subscription {
+    padding: 80px 0;
+    text-align: left;
+  }
+
+  .subscription-image img {
+    height: 285px;
+    padding-left: 0;
+  }
+
+  .subscription-title {
+    font-size: 40px;
+  }
+
+  .subscription .input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+
+  .subscription .input-group input {
+    height: 56px;
+    padding: 16px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.33333333;
+  }
+
+  .subscription .input-group .fill-button {
+    flex-shrink: 0;
+    width: 160px;
+  }
+
+  .subscription-form .form-notice {
+    font-size: 14px;
+    line-height: 1.71428571;
   }
 }
 
