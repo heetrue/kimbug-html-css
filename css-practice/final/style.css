@@ -284,6 +284,24 @@ p {
   color: #3040c4;
 }
 
+/* Footer */
+.footer {
+  padding: 24px 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-link a {
+  font-size: 14px;
+  line-height: 1.71428571;
+  letter-spacing: -0.01em;
+  color: #807f81;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -427,6 +445,15 @@ p {
   .subscription-form .form-notice {
     font-size: 14px;
     line-height: 1.71428571;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 16px 0;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 16px;
   }
 }
 
